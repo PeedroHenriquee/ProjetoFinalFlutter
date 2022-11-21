@@ -42,7 +42,7 @@ class _EntradaState extends State<Entrada> {
                         style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 62, 8, 107)),
                       ),
                       onPressed: () {
-                        Navigator.of(context).pushNamed('/ct');
+                        Navigator.of(context).pushNamed('/dados');
                         //Navigator.push(context, MaterialPageRoute(builder: (context) => MyMapa(title: 'MAPA')));
                       }),
                 ),

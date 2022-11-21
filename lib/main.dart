@@ -5,6 +5,7 @@ import 'package:app/views/myhome.dart';
 import 'package:app/views/entrada.dart';
 import 'package:app/views/maps.dart';
 import 'package:app/views/cadastro.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'firebase_options.dart';
 

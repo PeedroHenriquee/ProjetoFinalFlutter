@@ -6,6 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:app/views/entrada.dart';
 import 'package:app/views/maps.dart';
+import 'package:app/views/dados.dart';
 
 
 
@@ -24,11 +25,12 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes:{
-        '/' : (context) => Home(title: 'principal',),
-        '/home' : (context) => Entrada(title: 'entrada',),
+        '/home' : (context) => Home(title: 'principal',),
+        '/' : (context) => Entrada(title: 'entrada',),
         '/map'  : (context) => MyMapa(title: 'Mapa',),
-        '/lista'   : (context) => Cadastro(title: 'cadastro'),
+        '/lista'   : (context) => Cadastro(title: 'cadastro',),
         '/ct' : (context) => Contatos(),
+        '/dados' : (context) => Dados(),
       },
       
     );
