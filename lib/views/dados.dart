@@ -23,20 +23,22 @@ class Dados extends StatelessWidget {
         ],
       ),
       body: StreamBuilder<List<User>>(
-          stream: readUsers(), builder: (context, snapshot){if (snapshot.hasError) {
-            return Text('ERrooooo ${snapshot}');}else if(snapshot.hasData){
+          stream: readUsers(),
+          builder: (context, snapshot) {
+            if (snapshot.hasError) {
+              return Text('Something went wrong! ${snapshot.error}');
+            } else if (snapshot.hasData) {
               final users = snapshot.data!;
-            
-            return ListView(
-              children: users.map(buildUser).toList(), );
-            
-            }else{return Center(child: CircularProgressIndicator());
+
+              return ListView(
+                children: users.map(buildUser).toList(),
+              );
+            } else {
+              return Center(child: CircularProgressIndicator());
             }
-  }),
+          }),
     );
   }
-
- 
 }
 
 Future createUser(User user,
@@ -94,15 +96,13 @@ class User {
     final json = user.toJson();
     await docUser.set(json);
   }
-  
 }
-Widget buildUser(User user) => ListTile(
-  leading: CircleAvatar(child: Image.asset('images/R.jpg')),
-  title: Text((user.name)),
-  
-  tileColor: Colors.green[100],
-);
 
-Stream<List<User>> readUsers() =>
-      FirebaseFirestore.instance.collection('u').snapshots().map((snapshot) =>
-          snapshot.docs.map((doc) => User.fromJson(doc.data())).toList());
+Widget buildUser(User user) => ListTile(
+      leading: CircleAvatar(child: Image.asset('images/R.jpg')),
+      title: Text((user.name)),
+      subtitle: Text(user.email),
+      tileColor: Colors.green[100],
+    );
+
+Stream<List<User>> readUsers() => FirebaseFirestore.instance.collection('usuarios').snapshots().map((snapshot) => snapshot.docs.map((doc) => User.fromJson(doc.data())).toList());

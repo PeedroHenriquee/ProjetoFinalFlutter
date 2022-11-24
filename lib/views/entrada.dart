@@ -20,9 +20,9 @@ class _EntradaState extends State<Entrada> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        backgroundColor: Color.fromARGB(255, 224, 6, 166),
         centerTitle: true,
-        title: Text(' 👇  Navigation Here  👇 '),
+        title: Text(' Tela Inicial '),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -32,14 +32,14 @@ class _EntradaState extends State<Entrada> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [Container(
-                  color: Colors.orange,
+                  color: Colors.greenAccent,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
                   child: TextButton(
                       child: Text(
                         'CONTATOS',
-                        style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 62, 8, 107)),
+                        style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 63, 1, 46),),
                       ),
                       onPressed: () {
                         Navigator.of(context).pushNamed('/dados');
@@ -51,14 +51,14 @@ class _EntradaState extends State<Entrada> {
                   height: 190,
                 ),
                 Container(
-                  color: Colors.orange,
+                  color: Colors.greenAccent,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
                   child: TextButton(
                       child: Text(
                         'MAPA',
-                        style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 62, 8, 107)),
+                        style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 63, 1, 46),),
                       ),
                       onPressed: () {
                         Navigator.of(context).pushNamed('/map');
@@ -71,23 +71,23 @@ class _EntradaState extends State<Entrada> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  color: Colors.orange,
+                  color: Colors.greenAccent,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
                   child: TextButton(
                     onPressed: _launchurlL,
-                    child: Text("SITE IFPI", style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 62, 8, 107)),),
+                    child: Text("SITE IFPI", style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 63, 1, 46),),),
                   ),
                 ),
                 Container(
-                  color: Colors.orange,
+                  color: Colors.greenAccent,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
                   child: TextButton(
                     onPressed: _launchurl,
-                    child: Text("VERTIBULAR IFPI", style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 62, 8, 107)),),
+                    child: Text("VERTIBULAR IFPI", style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 63, 1, 46),),),
                   ),
                 ),
               ],

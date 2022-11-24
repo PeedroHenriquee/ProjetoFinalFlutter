@@ -27,7 +27,7 @@ class _CadastroState extends State<Cadastro> {
           children :[
             Text('Cadastro',
             style: TextStyle(
-              color: Colors.green,
+              color: Colors.pink,
               fontSize: 30,
               fontWeight: FontWeight.w600
             ),),
@@ -74,7 +74,7 @@ class _CadastroState extends State<Cadastro> {
               child: Text('CADASTRAR'),
               style: ButtonStyle(
                 minimumSize: MaterialStateProperty.all(Size(120, 40)),
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.orangeAccent),
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.pink),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)))
                 ),
               ),

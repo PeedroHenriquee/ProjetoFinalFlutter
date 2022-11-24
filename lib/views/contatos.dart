@@ -21,7 +21,7 @@ class Contatos extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Cadastro de Contatos'),
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.pink,
         centerTitle: true,
         actions: <Widget>[
           IconButton(

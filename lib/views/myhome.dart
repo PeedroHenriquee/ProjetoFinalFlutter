@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        backgroundColor:Color.fromARGB(255, 224, 6, 166),
         centerTitle: true,
         title: Text('Tela Inicial'),
       ),

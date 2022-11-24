@@ -46,7 +46,7 @@ android {
         
         applicationId "com.example.app"
 
-        minSdkVersion 20
+        minSdkVersion 20+
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -68,5 +68,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
   
     implementation platform('com.google.firebase:firebase-bom:31.0.3')
-
+     classpath 'com.android.tools.build:gradle:7.1.2'
 }

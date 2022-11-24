@@ -81,7 +81,7 @@ class _MyMapaState extends State<MyMapa> {
         home: Scaffold(
           appBar: AppBar(
             title: const Text('Meu Mapa'),
-            backgroundColor: Colors.orange,
+            backgroundColor: Colors.pink,
             centerTitle: true,
 
           ),

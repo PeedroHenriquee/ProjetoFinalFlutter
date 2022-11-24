@@ -21,12 +21,12 @@ class MyApp extends StatelessWidget {
       title: 'Projeto Final',
       theme: ThemeData(
        
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.pink
       ),
       initialRoute: '/',
       routes:{
-        '/home' : (context) => Home(title: 'principal',),
-        '/' : (context) => Entrada(title: 'entrada',),
+        '/' : (context) => Home(title: 'principal',),
+        '/home' : (context) => Entrada(title: 'entrada',),
         '/map'  : (context) => MyMapa(title: 'Mapa',),
         '/lista'   : (context) => Cadastro(title: 'cadastro',),
         '/ct' : (context) => Contatos(),
