@@ -14,8 +14,8 @@ class Entrada extends StatefulWidget {
 }
 
 class _EntradaState extends State<Entrada> {
-  final Uri  _url = Uri.parse('https://selecao.ifpi.edu.br/concurso/acesso_candidato/13/');
-  final Uri  uuu = Uri.parse('http://ifpi.edu.br/');
+  final Uri  _url = Uri.parse('https://voluntariadobb.v2v.net/pt-BR/aggregators/1539a383-dc83-4151-8cf1-72cdb5149995');
+  final Uri  uuu = Uri.parse('http://www.hemopi.pi.gov.br/agendamento.php');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +32,7 @@ class _EntradaState extends State<Entrada> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [Container(
-                  color: Colors.greenAccent,
+                  color: Colors.pink,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
@@ -51,7 +51,7 @@ class _EntradaState extends State<Entrada> {
                   height: 190,
                 ),
                 Container(
-                  color: Colors.greenAccent,
+                  color: Colors.pink,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
@@ -71,23 +71,23 @@ class _EntradaState extends State<Entrada> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  color: Colors.greenAccent,
+                  color: Colors.pink,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
                   child: TextButton(
                     onPressed: _launchurlL,
-                    child: Text("SITE IFPI", style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 63, 1, 46),),),
+                    child: Text("DOE SANGUE", style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 63, 1, 46),),),
                   ),
                 ),
                 Container(
-                  color: Colors.greenAccent,
+                  color: Colors.pink,
                   alignment: Alignment.center,
                   width: 195,
                   height: 180,
                   child: TextButton(
                     onPressed: _launchurl,
-                    child: Text("VERTIBULAR IFPI", style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 63, 1, 46),),),
+                    child: Text("AJUDE!", style: TextStyle(fontSize: 20, color:Color.fromARGB(255, 63, 1, 46),),),
                   ),
                 ),
               ],

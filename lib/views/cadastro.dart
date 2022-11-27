@@ -25,12 +25,7 @@ class _CadastroState extends State<Cadastro> {
         child: SingleChildScrollView(padding: EdgeInsets.all(32.0),
         child: Column(
           children :[
-            Text('Cadastro',
-            style: TextStyle(
-              color: Colors.pink,
-              fontSize: 30,
-              fontWeight: FontWeight.w600
-            ),),
+            
             SizedBox(
               height: 50,
             ),
@@ -38,11 +33,11 @@ class _CadastroState extends State<Cadastro> {
               height: 150,
               child: Image.asset('images/R.jpg'),
             ),
-            //Separarção entre a foto e o espaço de loguin.
+          
             SizedBox(
               height: 40,
             ),
-            //classe para incluir o email
+            
             TextFormField(
                 controller: _nomeController,
                 decoration: InputDecoration(

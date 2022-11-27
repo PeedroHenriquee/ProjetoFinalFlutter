@@ -78,7 +78,7 @@ class _HomeState extends State<Home> {
                 },
                 style: ButtonStyle(minimumSize: MaterialStateProperty.all(Size(120, 40)),
                   backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.orangeAccent),
+                      MaterialStateProperty.all<Color>(Colors.pink),
                 ),
               ),
               SizedBox(height: 5.0,),
@@ -94,7 +94,7 @@ class _HomeState extends State<Home> {
                 style: ButtonStyle(
                   minimumSize: MaterialStateProperty.all(Size(100, 40)),
                   backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.orangeAccent),
+                      MaterialStateProperty.all<Color>(Colors.pink),
                 ),
               ),
             ],
